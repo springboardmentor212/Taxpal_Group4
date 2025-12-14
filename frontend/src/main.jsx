@@ -6,6 +6,8 @@ import App from "./App";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";
+import Settings from "./pages/Settings";        // <-- add this
+import EditProfile from "./pages/EditProfile";  // <-- add this
 
 import "./styles.css";
 
@@ -17,6 +19,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
         <Route path="forgot-password" element={<ForgotPassword />} />
+        <Route path="settings" element={<Settings />} />          {/* <-- add this */}
+        <Route path="edit-profile" element={<EditProfile />} />   {/* <-- add this */}
       </Route>
     </Routes>
   </BrowserRouter>

@@ -23,8 +23,8 @@
 }
 
 html, body {
-  height: 100%;
-  overflow: hidden;
+  min-height: 100vh;   /* allow taller content */
+  overflow-y: auto;    /* enable vertical scroll */
 }
 
 body {

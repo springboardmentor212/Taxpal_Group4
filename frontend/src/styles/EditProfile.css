@@ -1,0 +1,226 @@
+.edit-page {
+  min-height: 100vh;
+  background-color: #e8e8e8;
+}
+
+.edit-header {
+  position: relative;
+  background-color: #1a6cfa;
+  height: 220px;
+}
+
+.edit-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #e8e8e8;
+  clip-path: ellipse(60% 100% at 50% 100%);
+}
+
+.edit-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 48px;
+  position: relative;
+}
+
+.edit-topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.edit-back-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-back-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.edit-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-rupee {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.edit-title {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.edit-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin: 0;
+}
+
+.edit-heading {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.08em;
+}
+
+.edit-icon {
+  position: absolute;
+  right: 64px;
+  top: 80px;
+}
+
+.edit-pen {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.edit-avatar-wrap {
+  position: relative;
+  margin-top: -64px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  z-index: 10;
+}
+
+.edit-avatar {
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  border: 4px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.edit-avatar-icon {
+  width: 80px;
+  height: 80px;
+  color: #8a8a8a;
+}
+
+.edit-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 64px 64px;
+}
+
+.edit-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 40px;
+}
+
+.edit-field {
+  margin-bottom: 40px;
+}
+
+.edit-field label {
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.edit-input {
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  background: transparent;
+  height: 48px;
+  font-size: 16px;
+  outline: none;
+  padding: 0;
+  width: 100%;
+}
+
+.edit-input:focus {
+  border-color: #1a6cfa;
+}
+
+.edit-password {
+  position: relative;
+}
+
+.edit-password-input {
+  padding-right: 40px;
+}
+
+.edit-eye-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #8a8a8a;
+  cursor: pointer;
+}
+
+.edit-eye-btn:hover {
+  color: #333;
+}
+
+.edit-eye-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.edit-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-update-btn {
+  background-color: #1a6cfa;
+  color: white;
+  padding: 12px 64px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 6px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-update-btn:hover {
+  background-color: rgba(26, 108, 250, 0.9);
+}
+
+.edit-profile-container {
+  min-height: 100vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.scrollable-edit {
+  min-height: 100vh;     /* allow taller than screen */
+  overflow-y: auto;      /* enable vertical scroll */
+  padding-bottom: 2rem;  /* avoid cutoff at bottom */
+}
