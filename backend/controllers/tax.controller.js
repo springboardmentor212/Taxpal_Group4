@@ -1,22 +1,21 @@
-import TaxRecord from '../models/TaxRecord.js';
+import TaxRecord from "../models/TaxRecord.js";
 
 export const calculateTax = async (req, res) => {
   try {
-    const { userId, taxYear, regime, income, deductions } = req.body;
+    const { userId, taxYear, regime, income, deductions = {} } = req.body;
 
-    // Net taxable income = annualGross - total deductions
     const totalDeductions =
       (deductions.section80C || 0) +
       (deductions.section80D || 0) +
       (deductions.homeLoanInterest || 0) +
       (deductions.otherDeductions || 0);
 
-    const netIncome = income.annualGross - totalDeductions;
+    const gross = income?.annualGross || 0;
+    const netIncome = Math.max(gross - totalDeductions, 0);
 
-    // Simple tax logic (example: 20% flat rate for now)
-    const taxAmount = netIncome * 0.2;
+    const taxAmount = Math.round(netIncome * 0.2);
 
-    const record = new TaxRecord({
+    const record = await TaxRecord.create({
       userId,
       taxYear,
       regime,
@@ -25,19 +24,32 @@ export const calculateTax = async (req, res) => {
       taxAmount
     });
 
-    await record.save();
-
-    res.json({ message: 'Tax calculated successfully', record });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.json({
+      success: true,
+      taxAmount,
+      record
+    });
+  } catch (error) {
+    console.error("Tax calculation failed:", error);
+    res.status(500).json({ success: false, message: "Tax calculation failed" });
   }
 };
 
 export const getHistory = async (req, res) => {
   try {
-    const records = await TaxRecord.find().sort({ createdAt: -1 });
-    res.json(records);
-  } catch (err) {
-    res.status(500).json({ error: err.message });
+    const { userId } = req.query;
+
+    const filter = userId ? { userId } : {};
+
+    const records = await TaxRecord.find(filter)
+      .sort({ createdAt: -1 });
+
+    res.json({
+      success: true,
+      records
+    });
+  } catch (error) {
+    console.error("Failed to fetch tax history:", error);
+    res.status(500).json({ success: false, message: "Failed to fetch history" });
   }
 };
