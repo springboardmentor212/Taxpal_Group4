@@ -1,0 +1,256 @@
+/* ===== VARIABLES ===== */
+:root {
+  --blue: #4f46e5;
+  --blue-dark: #4338ca;
+  --left-blue: linear-gradient(180deg, #4f46e5, #4338ca);
+  --muted: #6b7280;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --border-light: #e5e7eb;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --success: #10b981;
+  --error: #ef4444;
+}
+
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: #f8fafc;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== LEFT PANEL ===== */
+.left-panel {
+  width: 45%;
+  background: var(--left-blue);
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.brand span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.left-panel h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.left-panel p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.bullets {
+  margin-top: 30px;
+  list-style: none;
+}
+
+.bullets li {
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+/* ===== RIGHT PANEL ===== */
+.right-panel {
+  width: 55%;
+  background: white;
+  padding: 60px;
+  overflow-y: auto;
+}
+
+/* ===== TOP NAV ===== */
+.auth-top-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.btn-small {
+  background: var(--blue);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== FORM CARD ===== */
+.form-card {
+  max-width: 420px;
+  margin: auto;
+}
+
+.form-card h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.muted {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* ===== INPUT ===== */
+label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 0 14px;
+  height: 46px;
+  margin-bottom: 16px;
+  background: #f9fafb;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+}
+
+/* ===== PASSWORD ===== */
+.password-wrapper {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== ROW ===== */
+.row-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+}
+
+.forgot-btn {
+  font-size: 14px;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* ===== CHECKBOX ===== */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* ===== BUTTON ===== */
+.btn.primary {
+  width: 100%;
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn.primary:hover {
+  background: var(--blue-dark);
+}
+
+.btn.primary:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* ===== FOOTER TEXT ===== */
+.centered {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* ===== SUCCESS MESSAGE ===== */
+.success-message {
+  text-align: center;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--success);
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    padding: 40px 24px;
+  }
+}
