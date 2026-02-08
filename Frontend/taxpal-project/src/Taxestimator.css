@@ -1,0 +1,68 @@
+.tax-estimator{
+  margin-left: 190px; 
+  margin-top: 45px;   
+}
+.form-estimator{
+  width: 100%;
+  height: 100vh;
+  max-width: calc(100vw - 150px - 70px);
+  margin-left: 50px;
+  margin-right: 250px;
+  border-radius: 10px;
+  padding: 24px 120px 40px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+input {
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+.section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.button-class{
+    background-color: rgb(7, 37, 173);
+    color:white;
+    display: block;
+    margin: 24px auto 0;
+}
+.error-msg {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.success-msg {
+  background: #dcfce7;
+  color: #166534;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}

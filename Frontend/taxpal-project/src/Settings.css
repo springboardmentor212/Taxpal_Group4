@@ -1,0 +1,50 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-card {
+  background: #fff;
+  width: 520px;
+  border-radius: 14px;
+  padding: 28px;
+}
+.modal-card h2 {
+  margin-bottom: 6px;
+  text-align: center;
+}
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.settings-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 22px;
+}
+.btn-outline {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+}
+.btn-outline:hover{
+    background-color: rgb(204, 27, 27);
+    color:white;
+}

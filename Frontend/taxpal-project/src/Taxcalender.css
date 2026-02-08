@@ -1,0 +1,102 @@
+.tax-container {
+  margin-left: 190px;
+  margin-top: 45px;
+  width: calc(100% - 190px);
+  max-width: calc(100vw - 190px - 70px);
+  padding-right: 40px;
+  box-sizing: border-box;
+  display: block; 
+}
+.tax-card-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.calendar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%; 
+}
+.calendar-card {
+  width: 100%; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #eef0f2;
+  border-radius: 12px;
+  gap: 15px, !important;;
+  box-sizing: border-box; 
+}
+.calendar-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width:100%;
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827 ;
+  white-space: nowrap; 
+}
+
+.item-date {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 4px 0;
+}
+
+.item-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 8px;
+  line-height: 1.5;
+  max-width: 80%; 
+}
+.badge {
+  flex-shrink: 0; 
+  margin-left: 20px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 80px;
+}
+.badge.payment {
+  background-color: #fff7ed; 
+  color: #f97316;            
+  border: 1px solid #ffedd5;
+}
+.badge.reminder {
+  background-color: #eff6ff; 
+  color: #3b82f6;            
+  border: 1px solid #dbeafe;
+}
+.note-class p {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.5;
+  margin-top: 20px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.note-class a {
+  color: #006eff; 
+  text-decoration: none;
+  margin-left: 5px;
+}
+.note-class a:hover {
+  text-decoration: underline;
+}
