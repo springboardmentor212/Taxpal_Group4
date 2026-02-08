@@ -1,0 +1,105 @@
+.expense-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.expense-form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expense-form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.expense-form-title {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+.expense-form-subtitle {
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+.expense-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.expense-label {
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+  color: #444;
+}
+.expense-field {
+  display: flex;
+  flex-direction: column;
+}
+.expense-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+.expense-textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  resize: none;
+}
+.expense-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.expense-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.expense-btn.cancel {
+  background: white;
+  border: 1px solid #ddd;
+}
+.expense-btn.save {
+  background: #f05454;
+  color: white;
+  border: none;
+}
+.error-msg {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.success-msg {
+  background: #dcfce7;
+  color: #166534;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}

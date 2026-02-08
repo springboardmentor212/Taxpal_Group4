@@ -1,0 +1,80 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+.transactions-modal-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 850px;
+    max-width: 95%;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-subtitle {
+    color: #181818;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.transactions-list-container {
+    max-height: 450px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+.modal-table-row {
+    display: grid;
+    grid-template-columns: 60px 120px 1fr 150px 100px 100px;
+    padding: 15px;
+    align-items: center;
+}
+.modal-table-header {
+    background: #f9f9f9;
+    border-bottom: 2px solid #eee;
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+}
+.transaction-row-item {
+    border-bottom: 1px solid #f0f0f0;
+}
+.amount-income {
+    color: green;
+    font-weight: bold;
+}
+.amount-expense {
+    color: red;
+    font-weight: bold;
+}
+.icon-close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.modal-footer {
+    margin-top: 20px;
+    text-align: right;
+}
+.close-btn {
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: rgb(202, 38, 38);
+    color:white;
+    cursor: pointer;
+    font-weight: 600;
+}

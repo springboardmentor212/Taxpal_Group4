@@ -1,0 +1,205 @@
+.dashboard-class{
+    width: 100%;               
+    max-width: calc(100vw - 150px - 70px);
+    margin-left: 50px;   
+    margin-top: 40px;
+    margin-right: 250px;
+    border-radius: 10px;
+    padding: 24px 120px 40px;
+}
+.dashboard-header {
+  margin-left: 190px; 
+  margin-top: 45px;   
+}
+
+.dashboard-header h2 {
+  margin: 0;           
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.dashboard-header p {
+  margin: 6px 0 0 0;   
+  font-size: 14px;
+  color: #6b7280;     
+  text-align: left;
+}
+.dashboard-buttons {
+    display: flex;                
+    justify-content: flex-end;    
+    gap: 25px;                    
+    width: 100%;                  
+    box-sizing: border-box;      
+}
+
+.dashboard-buttons i{
+    color:green;
+}
+#expenses-button{
+    color:red;
+}
+.income-boxes{
+    width: 100%;               
+    max-width: calc(100vw - 150px - 70px);
+    margin-left: 150px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:125px;
+}
+.income-boxes h2{
+  margin: 10px 0 4px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+}
+.positive { 
+    color: #16a34a; 
+}
+.negative { 
+    color: #dc2626; 
+}
+.warning  { 
+    color: #ca8a04; 
+}
+.neutral  { 
+    color: #6b7280; 
+}
+.monthly-income{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:15px;
+    white-space: nowrap;
+}
+#income{
+    color:green;
+}
+#expenses{
+    color:red;
+}
+#tax{
+    color:rgb(226, 158, 32);
+}
+#savings{
+    color:blue;
+}
+.charts {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  padding: 0 40px;
+}
+.chart-left {
+  flex: 2;                 
+  gap: 5px;
+  margin-left: 145px;
+}
+
+.chart-right {
+  flex: 1;                 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.yearly-chats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.chart-heading {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.yearly-chats p{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  display:inline;
+}
+.chart-buttons {
+  display: flex;
+  gap: 10px;
+}
+.chart-buttons button {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+
+.chart-buttons button:hover {
+  background-color: #ca3510;
+}
+.yearly-chats button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+.yearly-chats button:hover {
+  background-color: #e5e7eb;
+}
+.charts > div:nth-child(2) {
+  width: 100%;
+}
+.pie-charts {
+  padding-left: 40px;
+}
+
+.yearly-chats p {
+    margin: 0;              
+    margin-right: 200px;     
+}
+
+.yearly-chats button {
+    margin: 0; 
+    border: none;
+}
+.recent-transactions-header {
+    width: 100%;               
+    max-width: calc(100vw - 150px - 70px);
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 120px;
+}
+.recent-transactions-header p {
+    margin: 0; 
+}
+.header-bars{
+    width:100%;
+    max-width: calc(100vw - 150px - 70px);
+    margin-left: 150px;
+    display:grid;
+    grid-template-columns: 50px 120px 200px 150px 100px 100px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e7eb;
+    gap: 45px;
+}
+
+.header-bars p,
+.transaction-row p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.transaction-row {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+.transaction-row:hover {
+    background-color: #f9f9f9;
+}
