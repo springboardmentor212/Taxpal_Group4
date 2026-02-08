@@ -1,0 +1,113 @@
+.main-Login-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.left-box {
+  background-color: rgb(46, 43, 43);
+  width: 70%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-box img {
+  width: 100%;
+  height: auto;
+  opacity: 0.85;
+}
+.left-box h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.login-class {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 40px;
+}
+.login-class h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: black;
+}
+.input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+  background: transparent !important; 
+}
+.input-box input {
+  width: 100%;            
+  height: 40px;                 
+  padding: 25px 25px 25px 25px;
+  border-radius: 25px;          
+  border: 1px solid #ccc;
+  font-size: 15px;
+  color: #000000 !important;                       
+  box-sizing: border-box;     
+  display: block;
+  outline: none;
+  z-index: 1;
+  cursor: pointer;
+}
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #000000; 
+  z-index: 1; 
+}
+.input-box input:focus {
+  outline: none;
+  border-color: #2b2be2;
+}
+#button-id {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2b2be2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#button-id:hover {
+  background-color: #1f1fc7;
+}
+.error-msg {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.success-msg {
+  background: #dcfce7;
+  color: #166534;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .main-Login-page {
+    flex-direction: column;
+  }
+
+  .left-box {
+    width: 100%;
+    height: 40vh;
+  }
+  .login-class {
+    width: 100%;
+  }
+}

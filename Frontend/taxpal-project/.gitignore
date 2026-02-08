@@ -1,0 +1,21 @@
+# Node / React
+node_modules/
+dist/
+build/
+
+# Environment & secrets
+.env
+.env.local
+.env.production
+
+# Backend secrets
+Backend/credentials.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
